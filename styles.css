@@ -933,3 +933,202 @@ align-items: flex-end;}
         padding: 60px 6%;
     }
 }
+
+.about-img-carousel {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1rem 1.5rem;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0)
+    );
+
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    border-radius: 0 0 20px 20px;
+
+    pointer-events: none;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#lightboxImg {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 16px;
+    display: block;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 1rem 1.5rem;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0)
+    );
+
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    border-radius: 0 0 16px 16px;
+}
+
+/* HEADER FIX - BIGGER DESKTOP / TABLET */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 6%;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    box-shadow: 0 3px 18px rgba(0,0,0,0.08);
+}
+
+header .logo {
+    width: 420px;
+    max-width: 45vw;
+    height: auto;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header nav a {
+    font-size: 1.45rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #111;
+    text-decoration: none;
+}
+
+
+/* TABLET */
+@media (max-width: 1000px) {
+    header .logo {
+        width: 360px;
+        max-width: 48vw;
+    }
+
+    header nav a {
+        font-size: 1.3rem;
+    }
+
+    header nav {
+        gap: 1.8rem;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 5%;
+    }
+
+    header .logo {
+        width: 330px;
+        max-width: 90vw;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    header nav a {
+        font-size: 1.15rem;
+    }
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #111;
+}
+
+.hero-area {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.quote-form {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.quote-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.quote-form button {
+    border: none;
+    cursor: pointer;
+}

@@ -1129,3 +1129,14 @@ header nav a {
     border: none;
     cursor: pointer;
 }
+.contact {
+    padding-bottom: 0;
+}
+
+.quote-form {
+    margin-bottom: 0;
+}
+
+.site-footer {
+    margin-top: 30px;
+}

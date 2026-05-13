@@ -13,48 +13,77 @@ document.querySelectorAll(".before-after").forEach(section => {
 });
 
 const images = document.querySelectorAll(".gallery-grid img");
+
 const lightbox = document.getElementById("lightbox");
+
 const lightboxImg = document.getElementById("lightboxImg");
 
-// Open lightbox
+const lightboxCaption = document.getElementById("lightboxCaption");
+
 images.forEach(img => {
+
     img.addEventListener("click", () => {
+
         lightbox.style.display = "flex";
+
         lightboxImg.src = img.src;
+
+        lightboxCaption.textContent = img.alt;
+
     });
+
 });
 
-// Close lightbox when clicking background
 lightbox.addEventListener("click", (e) => {
+
     if (e.target !== lightboxImg) {
+
         lightbox.style.display = "none";
+
         lightboxImg.src = "";
+
     }
+
 });
 
 document.querySelectorAll(".about-img-carousel").forEach(carousel => {
+
     const slides = carousel.querySelectorAll(".about-slide");
+
+    const caption = carousel.querySelector(".carousel-caption");
+
     const prev = carousel.querySelector(".prev");
     const next = carousel.querySelector(".next");
 
     let index = 0;
 
     function showSlide(i) {
+
         slides.forEach(s => s.classList.remove("active"));
+
         slides[i].classList.add("active");
+
+        caption.textContent = slides[i].dataset.caption;
     }
 
     next.addEventListener("click", () => {
+
         index = (index + 1) % slides.length;
+
         showSlide(index);
+
     });
 
     prev.addEventListener("click", () => {
+
         index = (index - 1 + slides.length) % slides.length;
+
         showSlide(index);
+
     });
 
     showSlide(index);
+
 });
 
 document.querySelectorAll(".before-after").forEach(section => {
@@ -73,4 +102,6 @@ document.querySelectorAll(".before-after").forEach(section => {
         label.textContent = showingAfter ? "After" : "Before";
     });
 });
+
+
 

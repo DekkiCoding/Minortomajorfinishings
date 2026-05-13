@@ -1009,9 +1009,6 @@ header {
 
     background: white;
 
-    position: sticky;
-    top: 0;
-    z-index: 999;
 
     box-shadow: 0 3px 18px rgba(0,0,0,0.08);
 }

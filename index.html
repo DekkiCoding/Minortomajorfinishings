@@ -28,9 +28,12 @@
 <section class="hero">
     <div class="hero-content">
         <h1>One Stop Shop for All Your Finishing Needs</h1>
-        <p>Interior & Exterior • Residential & Commercial</p>
-        <a href="#contact" class="btn">Get a Quote</a>
-    </div>
+       <p>Interior & Exterior • Residential & Commercial</p>
+<p class="hero-area">Serving Stonewall, Winnipeg & surrounding Manitoba areas</p>
+       <div class="hero-buttons">
+    <a href="#contact" class="btn">Get a Quote</a>
+    <a href="tel:2049606186" class="btn btn-outline">Call Now</a>
+</div>
 </section>
 
 
@@ -44,8 +47,8 @@
     <div class="about-content">
          <h2>About <span class="accent">Us</span></h2>
         <p>
-            Minor to Major Finishings, led by Kristina Majors, is a Stonewall-based finishing company dedicated to delivering
-            high-quality craftsmanship across residential and commercial projects. Serving Stonewall and surrounding areas,
+            Minor to Major Finishings, led by Kristina Majors, is a Manitoba-based finishing company dedicated to delivering
+            high-quality craftsmanship across residential and commercial projects. Serving Winnipeg and surrounding areas,
             we specialize in transforming spaces with reliable, detail-focused work that combines skill, precision, and pride
             in every project we take on.
         </p>
@@ -66,17 +69,38 @@
 
 
 <div class="about-img-carousel">
-    <img class="about-slide active" src="images/finishkitchen3.jpg" alt="Finished room 1">
-    <img class="about-slide" src="images/finishedroom.jpg" alt="Finished room 2">
-    <img class="about-slide" src="images/finishkitchen4.jpg" alt="Finished room 3">
 
-    <img class="about-slide" src="images/finishedkitch1.jpg" alt="Finished room 3">
-    <img class="about-slide" src="images/finishbathroom.jpg" alt="Finished room 3">
+    <img class="about-slide active"
+         src="images/finishkitchen3.jpg"
+         alt="Finished room 1"
+         data-caption="Custom Kitchen Finishing">
+
+    <img class="about-slide"
+         src="images/finishedroom.jpg"
+         alt="Finished room 2"
+         data-caption="Interior Renovation Project">
+
+    <img class="about-slide"
+         src="images/finishkitchen4.jpg"
+         alt="Finished room 3"
+         data-caption="Modern Kitchen Remodel">
+
+    <img class="about-slide"
+         src="images/finishedkitch1.jpg"
+         alt="Finished room 4"
+         data-caption="Cabinet & Wall Refinishing">
+
+    <img class="about-slide"
+         src="images/finishbathroom.jpg"
+         alt="Finished room 5"
+         data-caption="Bathroom Renovation">
+
+    <div class="carousel-caption"></div>
 
     <button class="carousel-btn prev">&#10094;</button>
     <button class="carousel-btn next">&#10095;</button>
-</div>
 
+</div>
 
 
 
@@ -137,20 +161,29 @@
 <section id="gallery" class="gallery">
     <h2>Our Work</h2>
 
-    <div class="gallery-grid">
-        <img src="images/finishedkitch1.jpg" alt="">
-        <img src="images/finishkitch2.jpg" alt="">
-        <img src="images/finishkitchen3.jpg" alt="">
-        <img src="images/finished-basement.jpg" alt="">
-              <img src="images/finishedroom.jpg" alt="">
-        <img src="images/countertop.jpg" alt="">
-    </div>
+<div class="gallery-grid">
+    <img src="images/finishedkitch1.jpg" alt="Kitchen Cabinet Refinishing">
+    <img src="images/finishkitch2.jpg" alt="Modern Kitchen Renovation">
+    <img src="images/finishkitchen3.jpg" alt="Custom Kitchen Cabinet Finishing">
+    <img src="images/finished-basement.jpg" alt="Finished Basement Remodel">
+    <img src="images/finishedroom.jpg" alt="Interior Finishing Project">
+    <img src="images/countertop.jpg" alt="Countertop & Cabinets Renovation">
+       <img src="images/bathroomdone.jpg" alt="Modern Bathroom Renovation">
+</div>
 </section>
 
 
 <!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
-    <img id="lightboxImg" src="" alt="">
+
+    <div class="lightbox-content">
+
+        <img id="lightboxImg" src="" alt="">
+
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+
+    </div>
+
 </div>
 
 
@@ -194,8 +227,10 @@
 
 
 
-<!--Reviews-->
-    
+
+
+
+
 <section class="reviews-section">
     <div class="reviews-heading">
         <span class="section-label">Client Reviews</span>
@@ -241,16 +276,6 @@
 
 
 
-    
-
-
-
-
-
-
-
-
-
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
@@ -260,12 +285,55 @@
     <div class="contact-box">
         <p><strong>Phone:</strong> (204) 960-6186</p>
         <p><strong>Email:</strong> majorfinishings@gmail.com</p>
-        <p><strong>Location:</strong> Stonewall, Manitoba</p>
+        <p><strong>Location:</strong> Winnipeg, Manitoba</p>
     </div>
+
+    
+
+
+
 
   <a href="mailto:majorfinishings@gmail.com?subject=Quote Request" class="btn">
     Email Us
 </a>
+
+<form action="https://formspree.io/f/xlgzkeqa" method="POST" class="quote-form">
+
+    <input type="hidden" name="_subject" value="New Quote Request">
+
+    <input type="text"
+           name="name"
+           placeholder="Your Name"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Phone Number">
+
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
+
+    <select name="service" required>
+        <option value="">What service do you need?</option>
+        <option>Painting</option>
+        <option>Drywall / Taping</option>
+        <option>Wood Refinishing</option>
+        <option>Renovation</option>
+        <option>Commercial Work</option>
+        <option>Other</option>
+    </select>
+
+    <textarea name="message"
+              placeholder="Tell us about your project"
+              required></textarea>
+
+    <button type="submit" class="btn">
+        Request Quote
+    </button>
+
+</form>
 </section>
 
 

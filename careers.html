@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team | Minor to Major Finishings</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html"><img src="images/minormajorfinishinglogo.png" alt="Minor to Major Finishings Logo" class="logo"></a>
+
+    <nav>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Work</a>
+        <a href="careers.html" class="active">Careers</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- CAREERS HERO -->
+<section class="hero careers-hero">
+    <div class="hero-content">
+        <h1>Join Our Team</h1>
+        <p>Skilled hands, honest work, and a crew that takes pride in the finish.</p>
+        <p class="hero-area">We're always looking to hear from painters, drywallers, and finishing tradespeople in the Winnipeg & Stonewall area</p>
+    </div>
+</section>
+
+<!-- WHY WORK HERE -->
+<section class="services careers-why">
+    <h2>Why Work With <span class="accent">Us</span></h2>
+
+    <div class="service-grid">
+        <div class="card">
+            <h3>Steady Work</h3>
+            <p>A growing book of residential and commercial projects across Manitoba.</p>
+        </div>
+
+        <div class="card">
+            <h3>Craft-First Culture</h3>
+            <p>We care about clean, lasting results &mdash; and we hire people who do too.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fair & Direct</h3>
+            <p>Straightforward pay, clear expectations, and a crew that has your back.</p>
+        </div>
+    </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="apply" class="contact careers-apply">
+    <h2>Apply Now</h2>
+    <p>Tell us a bit about yourself and attach your resume &mdash; we'll get back to you.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="quote-form" enctype="multipart/form-data" id="careerForm">
+
+        <input type="hidden" name="_subject" value="New Job Application">
+
+        <input type="text"
+               name="name"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="tel"
+               name="phone"
+               placeholder="Phone Number"
+               required>
+
+        <textarea name="message"
+                  placeholder="Tell us about your experience (optional)"></textarea>
+
+        <div class="file-upload">
+            <label for="resume" class="file-upload-label">
+                <span class="file-upload-icon">&#128206;</span>
+                <span id="fileUploadText">Click to upload your resume</span>
+                <span class="file-upload-hint">PDF, DOC, or DOCX &middot; max 10MB</span>
+            </label>
+            <input type="file"
+                   id="resume"
+                   name="resume"
+                   accept=".pdf,.doc,.docx"
+                   required>
+        </div>
+
+        <p id="fileError" class="file-error"></p>
+
+        <button type="submit" class="btn">
+            Submit Application
+        </button>
+
+        <p id="formStatus" class="form-status"></p>
+
+    </form>
+</section>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h3>Minor to Major Finishings</h3>
+            <p>Interior & Exterior Finishing Services</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="legal.html">Legal Disclaimer</a>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Stonewall, Manitoba</p>
+            <p>(204) 960-6186</p>
+            <p>majorfinishings@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Minor to Major Finishings. All rights reserved.</p>
+        <p class="credit">Site by Declan MacDougall</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="careers.js"></script>
+</body>
+</html>

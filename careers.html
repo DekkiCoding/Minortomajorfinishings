@@ -62,9 +62,9 @@
 <!-- APPLICATION FORM -->
 <section id="apply" class="contact careers-apply">
     <h2>Apply Now</h2>
-    <p>Tell us a bit about yourself and attach your resume &mdash; we'll get back to you.</p>
+    <p>Tell us a bit about yourself and email us your resume &mdash; we'll get back to you.</p>
 
-    <form action="https://formspree.io/f/mwleewnd" method="POST" class="quote-form" enctype="multipart/form-data" id="careerForm">
+    <form action="https://formspree.io/f/mwleewnd" method="POST" class="quote-form" id="careerForm">
 
         <input type="hidden" name="_subject" value="New Job Application">
 
@@ -86,20 +86,12 @@
         <textarea name="message"
                   placeholder="Tell us about your experience (optional)"></textarea>
 
-        <div class="file-upload">
-            <label for="resume" class="file-upload-label">
-                <span class="file-upload-icon">&#128206;</span>
-                <span id="fileUploadText">Click to upload your resume</span>
-                <span class="file-upload-hint">PDF, DOC, or DOCX &middot; max 10MB</span>
-            </label>
-            <input type="file"
-                   id="resume"
-                   name="resume"
-                   accept=".pdf,.doc,.docx"
-                   required>
+        <div class="resume-note">
+            <p>Please attach your resume and email it to us directly &mdash; then hit Submit Application below so we have your contact details on file.</p>
+            <a href="mailto:majorfinishings@gmail.com?subject=Job%20Application%20-%20Resume&body=Hi%2C%20please%20find%20my%20resume%20attached." class="btn btn-outline" id="resumeMailto">
+                &#128231; Email Your Resume
+            </a>
         </div>
-
-        <p id="fileError" class="file-error"></p>
 
         <button type="submit" class="btn">
             Submit Application
